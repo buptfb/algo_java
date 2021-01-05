@@ -58,6 +58,18 @@ public class Solution94 {
         return res;
     }
 
+    public static void main(String[] args) {
+        Solution94 sln = new Solution94();
+        // 根据给定的数组创建一棵树ion
+        TreeNode root = ConstructTree.constructTree(new Integer[] {1, 2, 3, 4, 5 ,6, 7});
+        // 将刚刚创建的树打印出来
+        TreeOperation.show(root);
 
+        List<Integer> result = sln.inorderTraversal(root);
+        System.out.println("########################################################");
+        for (Integer integer : result) {
+            System.out.print(integer + ",");
+        }
+    }
 
 }
