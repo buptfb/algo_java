@@ -1,14 +1,13 @@
 package com.algorithms.tree;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author fanbo@imoran.net
  * @date 2020/12/8 18:12
  */
 public class Solution94 {
-    public List<Integer> inorderTraversal(TreeNode root){
+    public List<Integer> inorderTraversal(TreeNode root) {
 
         List<Integer> result = new ArrayList<>();
         inorderTraversalRecursive(root, result);
@@ -16,7 +15,7 @@ public class Solution94 {
     }
 
     private void inorderTraversalRecursive(TreeNode root, List<Integer> result) {
-        if(root == null){
+        if (root == null) {
             return;
         }
         inorderTraversalRecursive(root.left, result);
@@ -27,30 +26,22 @@ public class Solution94 {
 
     public List<Integer> inorderTraversalMorris(TreeNode root) {
         List<Integer> res = new ArrayList<Integer>();
-        TreeNode predecessor = null;
-
-        while (root != null) {
-            if (root.left != null) {
-                // predecessor 节点就是当前 root 节点向左走一步，然后一直向右走至无法走为止
-                predecessor = root.left;
-                while (predecessor.right != null && predecessor.right != root) {
-                    predecessor = predecessor.right;
+        TreeNode pre = null;
+        while(root!=null) {
+            //如果左节点不为空，就将当前节点连带右子树全部挂到
+            //左节点的最右子树下面
+            if(root.left!=null) {
+                pre = root.left;
+                while(pre.right!=null) {
+                    pre = pre.right;
                 }
-
-                // 让 predecessor 的右指针指向 root，继续遍历左子树
-                if (predecessor.right == null) {
-                    predecessor.right = root;
-                    root = root.left;
-                }
-                // 说明左子树已经访问完了，我们需要断开链接
-                else {
-                    res.add(root.val);
-                    predecessor.right = null;
-                    root = root.right;
-                }
-            }
-            // 如果没有左孩子，则直接访问右孩子
-            else {
+                pre.right = root;
+                //将root指向root的left
+                TreeNode tmp = root;
+                root = root.left;
+                tmp.left = null;
+                //左子树为空，则打印这个节点，并向右边遍历
+            } else {
                 res.add(root.val);
                 root = root.right;
             }
@@ -58,16 +49,55 @@ public class Solution94 {
         return res;
     }
 
+    /**
+     * 迭代中序遍历二叉树
+     *
+     * @param root
+     * @return
+     */
+    public List<Integer> inorderTraversalIterate(TreeNode root) {
+        List<Integer> res = new ArrayList<Integer>();
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        while (stack.size() > 0 || root != null) {
+            //不断往左子树方向走，每走一次就将当前节点保存到栈中
+            //这是模拟递归的调用
+            if (root != null) {
+                stack.add(root);
+                root = root.left;
+                //当前节点为空，说明左边走到头了，从栈中弹出节点并保存
+                //然后转向右边节点，继续上面整个过程
+            } else {
+                TreeNode tmp = stack.pop();
+                res.add(tmp.val);
+                root = tmp.right;
+            }
+        }
+        return res;
+    }
+
+
     public static void main(String[] args) {
         Solution94 sln = new Solution94();
         // 根据给定的数组创建一棵树ion
-        TreeNode root = ConstructTree.constructTree(new Integer[] {1, 2, 3, 4, 5 ,6, 7});
+        TreeNode root = ConstructTree.constructTree(new Integer[]{1, 2, 3, 4, 5, 6});
         // 将刚刚创建的树打印出来
         TreeOperation.show(root);
 
         List<Integer> result = sln.inorderTraversal(root);
         System.out.println("########################################################");
         for (Integer integer : result) {
+            System.out.print(integer + ",");
+        }
+
+        List<Integer> result2 = sln.inorderTraversalIterate(root);
+        System.out.println("\n########################################################");
+        for (Integer integer : result2) {
+            System.out.print(integer + ",");
+        }
+
+        List<Integer> result3 = sln.inorderTraversalMorris(root);
+        System.out.println("\n########################################################");
+        for (Integer integer : result3) {
             System.out.print(integer + ",");
         }
     }
