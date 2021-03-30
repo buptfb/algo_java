@@ -5,11 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5416aa7f-9c8a-478a-8109-1c038affc9ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/algorithms/array/TwoSum2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/algorithms/backtracking/EightQueensSolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/algorithms/sort/In.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/algorithms/sort/Selection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/algorithms/string/IsValidPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/backtracking/EightQueensSolution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/sort/In.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/sort/Selection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/string/IsValidPalindrome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/tree/ConstructTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/tree/Solution102.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/tree/Solution107.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/tree/Solution124.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/tree/Solution144.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/tree/Solution145.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/tree/Solution297$Codec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/tree/Solution297.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/tree/Solution94.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/tree/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/tree/TreeOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/tree/TreeOperationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algo-java/com/algorithms/tree/codinginterview/Codec37.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/algorithms/array/TwoSum2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -111,7 +125,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -177,8 +191,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,18 +214,48 @@
               <item name="algo-java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="array" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algo-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="backtracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algo-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algo-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="string" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algo-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="tree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1617139416076" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1617139591786" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -347,7 +389,7 @@
       <workItem from="1615269851032" duration="1805000" />
       <workItem from="1615328643110" duration="1013000" />
       <workItem from="1616879810150" duration="8489000" />
-      <workItem from="1617139205316" duration="236000" />
+      <workItem from="1617139205316" duration="714000" />
     </task>
     <task id="LOCAL-00001" summary="基础算法与数据结构java实现">
       <created>1609825774028</created>
@@ -374,13 +416,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65678000" />
+    <option name="totallyTimeSpent" value="66392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20801815" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -624,17 +666,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithms/array/TwoSum2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
